@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace sir_pattern_ex1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int NOL = 1, No, space = 5;
+            do
+            {
+                No = 1;
+                do
+                {
+                    Console.Write(" ");
+                    No++;
+                } while (No <= space);
+
+                No = 1;
+                do
+                {
+                    Console.Write(" *");
+                    No++;
+                } while (No <= NOL);
+                NOL++;
+                space--;
+                Console.WriteLine();
+            } while (NOL <= 5);
+            Console.ReadLine();
+        }
+    }
+}
